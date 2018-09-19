@@ -105,7 +105,31 @@ $(document).ready(function() {
         items:3
     });
 
-    $(".brand_carousel_sponsors").owlCarousel({
+    $(".brand_carousel_gold_sponsors").owlCarousel({
+        loop:true,
+        autoplay:true,
+        smartSpeed:450,
+        autoplayHoverPause:false,
+        dots:false,
+        nav:false,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+
+            },
+            1000:{
+                items:1
+
+            }
+        },
+        items:1
+    });
+
+    $(".brand_carousel_silver_sponsors").owlCarousel({
         loop:true,
         autoplay:true,
         smartSpeed:450,
@@ -122,11 +146,35 @@ $(document).ready(function() {
 
             },
             1000:{
-                items:5
+                items:3
 
             }
         },
-        items:5
+        items:3
+    });
+
+    $(".brand_carousel_bronze_sponsors").owlCarousel({
+        loop:true,
+        autoplay:true,
+        smartSpeed:450,
+        autoplayHoverPause:false,
+        dots:false,
+        nav:false,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+
+            },
+            1000:{
+                items:1
+
+            }
+        },
+        items:1
     });
     /* ------------------------------------- */
     /* Animated progress bars
