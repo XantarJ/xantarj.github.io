@@ -136,7 +136,7 @@ body.scrolled .site-navbar .blur {
 .site-navbar ul.site-navigation li {
   font-size: 16px;
   text-transform: uppercase;
-  padding: 0 15px;
+  padding: 0 10px;
   font-weight: 500;
 }
 
@@ -426,6 +426,69 @@ h2.site-text-title {
   .site-hero-banner .site-hero-banner-text div i {
     font-size: 16px;
   }
+
+  #site-wrapper {
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    left: 0;
+  }
+
+  .site-navbar {
+    transition: all 0.5s ease-in-out;
+  }
+
+  .site-navbar ul.site-navigation {
+    display: none;
+  }
+
+  #mobile-menu-toggler {
+    display: inline-block;
+  }
+
+  body.show-mobile-menu #site-wrapper,
+  body.show-mobile-menu .site-navbar {
+    left: -250px;
+  }
+
+  #mobile-menu {
+    position: fixed;
+    right: -250px;
+    top: 0;
+    width: 220px;
+    background-color: #eee;
+    height: 100vh;
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+    z-index: 10000;
+  }
+
+  #mobile-menu ul.mobile-navigation {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  #mobile-menu ul.mobile-navigation li {
+    margin: 0;
+    padding: 0;
+  }
+
+  #mobile-menu ul.mobile-navigation li a {
+    text-align: center;
+    display: block;
+    padding: 15px 0;
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #e51937;
+  }
+
+  body.show-mobile-menu #mobile-menu {
+    right: 0;
+  }
 }
 
 @media (max-width: 650px) {
@@ -465,67 +528,6 @@ h2.site-text-title {
   .footer .content {
     padding-left: 15px;
     padding-right: 15px;
-  }
-  .site-navbar ul.site-navigation {
-    display: none;
-  }
-
-  #mobile-menu-toggler {
-    display: inline-block;
-  }
-
-  #site-wrapper {
-    position: relative;
-    transition: all 0.5s ease-in-out;
-    left: 0;
-  }
-  .site-navbar {
-    transition: all 0.5s ease-in-out;
-  }
-
-  body.show-mobile-menu #site-wrapper,
-  body.show-mobile-menu .site-navbar {
-    left: -250px;
-  }
-
-  #mobile-menu {
-    position: fixed;
-    right: -250px;
-    top: 0;
-    width: 220px;
-    background-color: #ddd;
-    height: 100vh;
-    padding: 20px 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.5s ease-in-out;
-    z-index: 10000;
-  }
-
-  #mobile-menu ul.mobile-navigation {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  #mobile-menu ul.mobile-navigation li {
-    margin: 0;
-    padding: 0;
-  }
-
-  #mobile-menu ul.mobile-navigation li a {
-    text-align: center;
-    display: block;
-    padding: 15px 0;
-    margin: 10px 0;
-    text-transform: uppercase;
-    font-size: 20px;
-    color: #e51937;
-  }
-
-  body.show-mobile-menu #mobile-menu {
-    right: 0;
   }
 }
 
