@@ -25,41 +25,41 @@ window.addEventListener("scroll", setScrolled);
 
 function countdown(endDate) {
   var days, hours, minutes, seconds;
-  
+
   endDate = new Date(endDate).getTime();
-  
+
   if (isNaN(endDate)) {
     console.error("Invalid countdown date");
-	  return;
+    return;
   }
-  
+
   setInterval(calculate, 1000);
-  
+
   function calculate() {
     var startDate = new Date();
     startDate = startDate.getTime();
-    
+
     var timeRemaining = parseInt((endDate - startDate) / 1000);
-    
+
     if (timeRemaining > 0) {
       days = parseInt(timeRemaining / 86400);
-      timeRemaining = (timeRemaining % 86400);
-      
+      timeRemaining = timeRemaining % 86400;
+
       hours = parseInt(timeRemaining / 3600);
-      timeRemaining = (timeRemaining % 3600);
-      
+      timeRemaining = timeRemaining % 3600;
+
       minutes = parseInt(timeRemaining / 60);
-      timeRemaining = (timeRemaining % 60);
-      
+      timeRemaining = timeRemaining % 60;
+
       seconds = parseInt(timeRemaining);
-      
-      document.getElementById("site-countdown").classList.remove('hidden');
+
+      document.getElementById("site-countdown").classList.remove("hidden");
       document.getElementById("days").innerHTML = parseInt(days, 10);
       document.getElementById("hours").innerHTML = ("0" + hours).slice(-2);
       document.getElementById("minutes").innerHTML = ("0" + minutes).slice(-2);
       document.getElementById("seconds").innerHTML = ("0" + seconds).slice(-2);
     } else {
-      document.getElementById("site-countdown").classList.add('hidden');
+      document.getElementById("site-countdown").classList.add("hidden");
       return;
     }
   }
@@ -80,30 +80,65 @@ function scrollLinks() {
       var currentTime = 0;
       var increment = 20;
       var duration = 800;
-      var animateScroll = function(){        
+      var animateScroll = function() {
         currentTime += increment;
         var val = easeInOutQuad(currentTime, scrollTop, diff, duration);
         window.scrollTo(0, val);
-        if(currentTime < duration) {
-            setTimeout(animateScroll, increment);
+        if (currentTime < duration) {
+          setTimeout(animateScroll, increment);
         }
-      }
+      };
       animateScroll();
+      deactivateMobileMenu();
     });
   });
 }
 
-function easeInOutQuad (t, b, c, d) {
-  t /= d/2;
-	if (t < 1) return c/2*t*t + b;
-	t--;
-	return -c/2 * (t*(t-2) - 1) + b;
-};
+function easeInOutQuad(t, b, c, d) {
+  t /= d / 2;
+  if (t < 1) return (c / 2) * t * t + b;
+  t--;
+  return (-c / 2) * (t * (t - 2) - 1) + b;
+}
 
-(function () { 
-  drawSpacer("site-hero-bottom-spacer", "rgba(255, 255, 255, 0)", "rgba(255, 255, 255, 1)");
-  drawSpacer("site-footer-spacer", "rgba(255, 255, 255, 0)", "rgba(255, 255, 255, 1)");
+function deactivateMobileMenu() {
+  document.body.classList.remove("show-mobile-menu");
+}
+
+function activateMobileMenu() {
+  document.body.classList.add("show-mobile-menu");
+}
+
+function mobileMenu() {
+  var toggler = document.getElementById("mobile-menu-toggler");
+  toggler.addEventListener(
+    "click",
+    function(ev) {
+      ev.preventDefault();
+      ev.stopPropagation();
+      if (document.body.classList.contains("show-mobile-menu")) {
+        deactivateMobileMenu();
+      } else {
+        activateMobileMenu();
+      }
+    },
+    false
+  );
+}
+
+(function() {
+  drawSpacer(
+    "site-hero-bottom-spacer",
+    "rgba(255, 255, 255, 0)",
+    "rgba(255, 255, 255, 1)"
+  );
+  drawSpacer(
+    "site-footer-spacer",
+    "rgba(255, 255, 255, 0)",
+    "rgba(255, 255, 255, 1)"
+  );
   scrollLinks();
   setScrolled();
-  countdown('11/29/2019 10:00:00'); 
-}());
+  countdown("11/29/2019 10:00:00");
+  mobileMenu();
+})();

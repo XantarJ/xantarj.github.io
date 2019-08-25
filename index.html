@@ -28,303 +28,321 @@
     </script>
   </head>
   <body id="site">
-    <section class="site-hero">
-      <nav class="site-navbar" aria-label="main navigation">
-        <div class="blur"></div>
-        <a href="#site" class="scrolling-link">
+    <div id="mobile-menu">
+      <ul class="mobile-navigation">
+        <li><a href="#event" class="scrolling-link">Event</a></li>
+        <li><a href="#schedule" class="scrolling-link">Schedule</a></li>
+        <li><a href="#speakers" class="scrolling-link">Speakers</a></li>
+        <li><a href="#tickets" class="scrolling-link">Tickets</a></li>
+        <li><a href="#sponsors" class="scrolling-link">Sponsors</a></li>
+        <li><a href="#organizers" class="scrolling-link">Organizers</a></li>
+      </ul>
+    </div>
+    <div id="site-wrapper">
+      <section class="site-hero">
+        <nav class="site-navbar" aria-label="main navigation">
+          <div class="blur"></div>
+          <a href="#site" class="scrolling-link">
             <img
+              src="/img/xantarj-logo.png"
+              class="site-navbar-brand-image"
+              alt="XantarJ"
+            />
+          </a>
+          <ul class="site-navigation">
+            <li><a href="#event" class="scrolling-link">Event</a></li>
+            <li><a href="#schedule" class="scrolling-link">Schedule</a></li>
+            <li><a href="#speakers" class="scrolling-link">Speakers</a></li>
+            <li><a href="#tickets" class="scrolling-link">Tickets</a></li>
+            <li><a href="#sponsors" class="scrolling-link">Sponsors</a></li>
+            <li><a href="#organizers" class="scrolling-link">Organizers</a></li>
+          </ul>
+          <div class="site-social-menu">
+            <a
+              href="https://twitter.com/VigoJUG"
+              target="_blank"
+              class="site-social twitter"
+            >
+              <i class="fab fa-fw fa-twitter"></i>
+            </a>
+            <a
+              href="https://github.com/vigojug"
+              target="_blank"
+              class="site-social github"
+            >
+              <i class="fab fa-fw fa-github"></i>
+            </a>
+
+            <a class="site-social" href="#" id="mobile-menu-toggler">
+              <i class="fas fa-fw fa-bars"></i>
+            </a>
+          </div>
+        </nav>
+        <div class="site-hero-banner">
+          <img
             src="/img/xantarj-logo.png"
-            class="site-navbar-brand-image"
+            class="site-hero-banner-logo"
             alt="XantarJ"
           />
-        </a>
-        <ul class="site-navigation">
-          <li><a href="#event" class="scrolling-link">Event</a></li>
-          <li><a href="#schedule" class="scrolling-link">Schedule</a></li>
-          <li><a href="#speakers" class="scrolling-link">Speakers</a></li>
-          <li><a href="#tickets" class="scrolling-link">Tickets</a></li>
-          <li><a href="#sponsors" class="scrolling-link">Sponsors</a></li>
-        </ul>
-        <div class="site-social-menu">
-          <a
-            href="https://twitter.com/VigoJUG"
-            target="_blank"
-            class="site-social twitter"
+          <div class="site-hero-banner-text">
+            <h1 class="title">XantarJ</h1>
+            <div class="date">
+              <i class="fa fa-calendar fa-lg fa-fw"></i>
+              29th November - 1st December
+            </div>
+            <div class="location">
+              <i class="fa fa-map-marker fa-lg fa-fw"></i>
+              Santiago de Compostela (Spain)
+            </div>
+          </div>
+        </div>
+        <canvas id="site-hero-bottom-spacer" width="500" height="150"></canvas>
+      </section>
+      <section class="site-countdown hidden" id="site-countdown">
+        <div class="element">
+          <div class="label">Days</div>
+          <div id="days"></div>
+        </div>
+        <div class="element">
+          <div class="label">Hours</div>
+          <div id="hours"></div>
+        </div>
+        <div class="element">
+          <div class="label">Minutes</div>
+          <div id="minutes"></div>
+        </div>
+        <div class="element">
+          <div class="label">Seconds</div>
+          <div id="seconds"></div>
+        </div>
+      </section>
+      <section class="site-intro" id="event">
+        <h2 class="site-text-title">
+          The event
+        </h2>
+        <div class="site-text-body">
+          XantarJ is the first Java conference in Galicia. Something different,
+          more focused in good networking with other engineers, share
+          experiences, show to rest of the world the amazing things we are doing
+          here... and, of course, have fun!
+        </div>
+        <div class="site-text-elements">
+          <div class="element">
+            <div class="icon">
+              <img
+                src="/img/calendar.png"
+                alt="From 29th november to 1st december"
+              />
+            </div>
+            <div class="text">
+              From 29th November<br />
+              to 1st December
+            </div>
+          </div>
+          <div class="element">
+            <div class="icon">
+              <img src="/img/map.png" alt="Santiago de Compostela (Spain)" />
+            </div>
+            <div class="text">
+              Santiago de Compostela<br />
+              Galicia, Spain
+            </div>
+          </div>
+          <div class="element">
+            <div class="icon">
+              <img src="/img/tickets.png" alt="It's free!" />
+            </div>
+            <div class="text">
+              Free tickets!
+            </div>
+          </div>
+          <div class="element">
+            <div class="icon">
+              <img src="/img/people.png" alt="More than 100 atendees" />
+            </div>
+            <div class="text">
+              More than<br />
+              150 atendees
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="site-section" id="schedule">
+        <h2 class="site-text-title">
+          Schedule
+        </h2>
+        <div class="site-text-body schedule">
+          We're still working on this, but here is a brief of the idea.
+
+          <h3>Friday 29th November</h3>
+          <em>Afternoon</em> - Open Space about Java and Communities.
+
+          <h3>Saturday 30th November</h3>
+          <em>Full day</em> - Talks of about 45 minutes each
+
+          <h3>Sunday 1st December</h3>
+          <em>Free</em> - Team building
+        </div>
+      </section>
+      <section class="site-section" id="speakers">
+        <h2 class="site-text-title">
+          Speakers
+        </h2>
+        <div class="site-text-elements speakers">
+          <div class="element">
+            <a target="_blank" href="https://www.twitter.com/radcortez">
+              <span
+                class="speaker-image"
+                style="background-image: url('/img/speakers/radcortez.jpg')"
+              ></span>
+              <span class="name">Roberto Cortez</span>
+              <span class="description">CoimbraJUG</span>
+            </a>
+          </div>
+          <div class="element">
+            <a target="_blank" href="https://www.twitter.com/brunobat_">
+              <span
+                class="speaker-image"
+                style="background-image: url('/img/speakers/brunobat_.jpg')"
+              ></span>
+              <span class="name">Bruno Baptista</span>
+              <span class="description">CoimbraJUG</span>
+            </a>
+          </div>
+          <div class="element">
+            <a target="_blank" href="https://www.twitter.com/icougil">
+              <span
+                class="speaker-image"
+                style="background-image: url('/img/speakers/icougil.jpg')"
+              ></span>
+              <span class="name">Nacho Cougil</span>
+              <span class="description">BarcelonaJUG</span>
+            </a>
+          </div>
+          <div class="element">
+            <a target="_blank" href="https://www.twitter.com/dgomezg">
+              <span
+                class="speaker-image"
+                style="background-image: url('/img/speakers/dgomezg.jpg')"
+              ></span>
+              <span class="name">David Gómez García</span>
+              <span class="description">MadridJUG</span>
+            </a>
+          </div>
+          <div class="element">
+            <a target="_blank" href="https://www.twitter.com/deors314">
+              <span
+                class="speaker-image"
+                style="background-image: url('/img/speakers/deors314.jpg')"
+              ></span>
+              <span class="name">Jorge Hidalgo</span>
+              <span class="description">MalagaJUG</span>
+            </a>
+          </div>
+          <div class="element">
+            <a target="_blank" href="https://www.twitter.com/vilojona">
+              <span
+                class="speaker-image"
+                style="background-image: url('/img/speakers/vilojona.jpg')"
+              ></span>
+              <span class="name">Jonathan Vila</span>
+              <span class="description">BarcelonaJUG</span>
+            </a>
+          </div>
+          <div class="element">
+            <a target="_blank" href="https://www.twitter.com/martinstuga">
+              <span
+                class="speaker-image"
+                style="background-image: url('/img/speakers/martinstuga.jpg')"
+              ></span>
+              <span class="name">Paulo Martins</span>
+              <span class="description">LisbonJUG</span>
+            </a>
+          </div>
+          <div class="element">
+            <a target="_blank" href="https://www.twitter.com/auritamh">
+              <span
+                class="speaker-image"
+                style="background-image: url('/img/speakers/auritamh.jpg')"
+              ></span>
+              <span class="name">Andrea Muñoz</span>
+              <span class="description">MadridJUG</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="site-section" id="tickets">
+        <h2 class="site-text-title">
+          Tickets
+        </h2>
+        <div class="site-text-body">
+          The event is free but we need to know how many atendees we'll have, so
+          you should get a ticket for each atendee.
+          <div>
+            <a href="#" class="button disabled">
+              Available soon
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="site-section" id="sponsors">
+        <h2 class="site-text-title">
+          Sponsors
+        </h2>
+        <div class="site-text-body">
+          <h3>Gold sponsors</h3>
+          <h3>Silver sponsors</h3>
+          <h3>Bronce sponsors</h3>
+        </div>
+      </section>
+      <section class="site-section" id="event">
+        <h2 class="site-text-title">
+          Organizers
+        </h2>
+        <div class="site-text-elements organizers">
+          <div class="element">
+            <a href="http://www.corunajug.org" target="_blank"
+              ><img src="/img/organizers/corunajug.png" alt="CoruñaJUG"
+            /></a>
+          </div>
+          <div class="element">
+            <a href="https://xantardev.org/" target="_blank"
+              ><img src="/img/organizers/xantardev.png" alt="XantarDev"
+            /></a>
+          </div>
+          <div class="element">
+            <a href="https://www.vigojug.org" target="_blank"
+              ><img src="/img/organizers/vigojug.png" alt="VigoJUG"
+            /></a>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <canvas id="site-footer-spacer" width="500" height="150"></canvas>
+        <div class="content">
+          Made with <i class="love fas fa-heart"></i> from the XantarJ
+          community.<br />
+          Using
+          <a href="https://fontawesome.com/" target="_blank">fontawesome</a>
+          and other icons made by
+          <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
+            >Freepik</a
           >
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a
-            href="https://github.com/vigojug"
-            target="_blank"
-            class="site-social github"
+          from
+          <a href="https://www.flaticon.com/" title="Flaticon"
+            >www.flaticon.com</a
           >
-            <i class="fab fa-github"></i>
-          </a>
+          licensed by
+          <a
+            href="http://creativecommons.org/licenses/by/3.0/"
+            title="Creative Commons BY 3.0"
+            target="_blank"
+            >CC 3.0 BY</a
+          >
+          with small changes.
         </div>
-      </nav>
-      <div class="site-hero-banner">
-        <img
-          src="/img/xantarj-logo.png"
-          class="site-hero-banner-logo"
-          alt="XantarJ"
-        />
-        <div class="site-hero-banner-text">
-          <h1 class="title">XantarJ</h1>
-          <div class="date">
-            <i class="fa fa-calendar fa-lg fa-fw"></i>
-            29th November - 1st December
-          </div>
-          <div class="location">
-            <i class="fa fa-map-marker fa-lg fa-fw"></i>
-            Santiago de Compostela (Spain)
-          </div>
-        </div>
-      </div>
-      <canvas id="site-hero-bottom-spacer" width="500" height="150"></canvas>
-    </section>
-    <section class="site-countdown hidden" id="site-countdown">
-      <div class="element">
-        <div class="label">Days</div>
-        <div id="days"></div>
-      </div>
-      <div class="element">
-        <div class="label">Hours</div>
-        <div id="hours"></div>
-      </div>
-      <div class="element">
-        <div class="label">Minutes</div>
-        <div id="minutes"></div>
-      </div>
-      <div class="element">
-        <div class="label">Seconds</div>
-        <div id="seconds"></div>
-      </div>
-    </section>
-    <section class="site-intro" id="event">
-      <h2 class="site-text-title">
-        The event
-      </h2>
-      <div class="site-text-body">
-        XantarJ is the first Java conference in Galicia. Something different,
-        more focused in good networking with other engineers, share experiences,
-        show to rest of the world the amazing things we are doing here... and,
-        of course, have fun!
-      </div>
-      <div class="site-text-elements">
-        <div class="element">
-          <div class="icon">
-            <img
-              src="/img/calendar.png"
-              alt="From 29th november to 1st december"
-            />
-          </div>
-          <div class="text">
-            From 29th November<br />
-            to 1st December
-          </div>
-        </div>
-        <div class="element">
-          <div class="icon">
-            <img src="/img/map.png" alt="Santiago de Compostela (Spain)" />
-          </div>
-          <div class="text">
-            Santiago de Compostela<br />
-            Galicia, Spain
-          </div>
-        </div>
-        <div class="element">
-          <div class="icon">
-            <img src="/img/tickets.png" alt="It's free!" />
-          </div>
-          <div class="text">
-            Free tickets!
-          </div>
-        </div>
-        <div class="element">
-          <div class="icon">
-            <img src="/img/people.png" alt="More than 100 atendees" />
-          </div>
-          <div class="text">
-            More than<br />
-            150 atendees
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="site-section" id="schedule">
-      <h2 class="site-text-title">
-        Schedule
-      </h2>
-      <div class="site-text-body schedule">
-        We're still working on this, but here is a brief of the idea.
-
-        <h3>Friday 29th November</h3>
-        <em>Afternoon</em> - Open Space about Java and Communities.
-
-        <h3>Saturday 30th November</h3>
-        <em>Full day</em> - Talks of about 45 minutes each
-
-        <h3>Sunday 1st December</h3>
-        <em>Free</em> - Team building
-      </div>
-    </section>
-    <section class="site-section" id="speakers">
-      <h2 class="site-text-title">
-        Speakers
-      </h2>
-      <div class="site-text-elements speakers">
-        <div class="element">
-          <a target="_blank" href="https://www.twitter.com/radcortez">
-            <span
-              class="speaker-image"
-              style="background-image: url('/img/speakers/radcortez.jpg')"
-            ></span>
-            <span class="name">Roberto Cortez</span>
-            <span class="description">CoimbraJUG</span>
-          </a>
-        </div>
-        <div class="element">
-          <a target="_blank" href="https://www.twitter.com/brunobat_">
-            <span
-              class="speaker-image"
-              style="background-image: url('/img/speakers/brunobat_.jpg')"
-            ></span>
-            <span class="name">Bruno Baptista</span>
-            <span class="description">CoimbraJUG</span>
-          </a>
-        </div>
-        <div class="element">
-          <a target="_blank" href="https://www.twitter.com/icougil">
-            <span
-              class="speaker-image"
-              style="background-image: url('/img/speakers/icougil.jpg')"
-            ></span>
-            <span class="name">Nacho Cougil</span>
-            <span class="description">BarcelonaJUG</span>
-          </a>
-        </div>
-        <div class="element">
-          <a target="_blank" href="https://www.twitter.com/dgomezg">
-            <span
-              class="speaker-image"
-              style="background-image: url('/img/speakers/dgomezg.jpg')"
-            ></span>
-            <span class="name">David Gómez García</span>
-            <span class="description">MadridJUG</span>
-          </a>
-        </div>
-        <div class="element">
-          <a target="_blank" href="https://www.twitter.com/deors314">
-            <span
-              class="speaker-image"
-              style="background-image: url('/img/speakers/deors314.jpg')"
-            ></span>
-            <span class="name">Jorge Hidalgo</span>
-            <span class="description">MalagaJUG</span>
-          </a>
-        </div>
-        <div class="element">
-          <a target="_blank" href="https://www.twitter.com/vilojona">
-            <span
-              class="speaker-image"
-              style="background-image: url('/img/speakers/vilojona.jpg')"
-            ></span>
-            <span class="name">Jonathan Vila</span>
-            <span class="description">BarcelonaJUG</span>
-          </a>
-        </div>
-        <div class="element">
-          <a target="_blank" href="https://www.twitter.com/martinstuga">
-            <span
-              class="speaker-image"
-              style="background-image: url('/img/speakers/martinstuga.jpg')"
-            ></span>
-            <span class="name">Paulo Martins</span>
-            <span class="description">LisbonJUG</span>
-          </a>
-        </div>
-        <div class="element">
-          <a target="_blank" href="https://www.twitter.com/auritamh">
-            <span
-              class="speaker-image"
-              style="background-image: url('/img/speakers/auritamh.jpg')"
-            ></span>
-            <span class="name">Andrea Muñoz</span>
-            <span class="description">MadridJUG</span>
-          </a>
-        </div>
-      </div>
-    </section>
-    <section class="site-section" id="tickets">
-      <h2 class="site-text-title">
-        Tickets
-      </h2>
-      <div class="site-text-body">
-        The event is free but we need to know how many atendees we'll have, so
-        you should get a ticket for each atendee.
-        <div>
-          <a href="#" class="button disabled">
-            Available soon
-          </a>
-        </div>
-      </div>
-    </section>
-    <section class="site-section" id="sponsors">
-      <h2 class="site-text-title">
-        Sponsors
-      </h2>
-      <div class="site-text-body">
-        <h3>Gold sponsors</h3>
-        <h3>Silver sponsors</h3>
-        <h3>Bronce sponsors</h3>
-      </div>
-    </section>
-    <section class="site-section" id="event">
-      <h2 class="site-text-title">
-        Organizers
-      </h2>
-      <div class="site-text-elements organizers">
-        <div class="element">
-          <a href="http://www.corunajug.org" target="_blank"
-            ><img src="/img/organizers/corunajug.png" alt="CoruñaJUG"
-          /></a>
-        </div>
-        <div class="element">
-          <a href="https://xantardev.org/" target="_blank"
-            ><img src="/img/organizers/xantardev.png" alt="XantarDev"
-          /></a>
-        </div>
-        <div class="element">
-          <a href="https://www.vigojug.org" target="_blank"
-            ><img src="/img/organizers/vigojug.png" alt="VigoJUG"
-          /></a>
-        </div>
-      </div>
-    </section>
-    <footer class="footer">
-      <canvas id="site-footer-spacer" width="500" height="150"></canvas>
-      <div class="content has-text-centered">
-        Made with <i class="love fas fa-heart"></i> from the XantarJ community
-        using <a href="https://fontawesome.com/" target="_blank">fontawesome</a
-        ><br />
-        and other icons made by
-        <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
-          >Freepik</a
-        >
-        from
-        <a href="https://www.flaticon.com/" title="Flaticon"
-          >www.flaticon.com</a
-        >
-        licensed by
-        <a
-          href="http://creativecommons.org/licenses/by/3.0/"
-          title="Creative Commons BY 3.0"
-          target="_blank"
-          >CC 3.0 BY</a
-        >
-        with small changes.
-      </div>
-    </footer>
+      </footer>
+    </div>
     <script src="js/site.js"></script>
     <script src="https://kit.fontawesome.com/c29d9a23e8.js"></script>
   </body>

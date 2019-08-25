@@ -5,11 +5,14 @@ body {
   font-size: 14px;
 }
 
-a, a:visited {
+a,
+a:visited {
   text-decoration: none;
   color: #d44;
 }
-a:focus, a:hover {
+
+a:focus,
+a:hover {
   color: #f44;
 }
 
@@ -27,12 +30,12 @@ a:focus, a:hover {
 
 .site-hero-banner {
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: center;
 }
 
 .site-hero-banner .site-hero-banner-logo {
-  width: 300px;
+  max-width: 300px;
 }
 
 .site-hero-banner .site-hero-banner-text {
@@ -70,7 +73,8 @@ a:focus, a:hover {
   margin-right: 10px;
 }
 
-#site-hero-bottom-spacer, #site-footer-spacer {
+#site-hero-bottom-spacer,
+#site-footer-spacer {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -79,6 +83,7 @@ a:focus, a:hover {
   height: 150px;
   z-index: 0;
 }
+
 #site-footer-spacer {
   position: relative;
   z-index: 10;
@@ -111,7 +116,7 @@ a:focus, a:hover {
 
 body.scrolled .site-navbar .blur {
   background-color: rgba(0, 0, 0, 0.5);
-} 
+}
 
 .site-navbar .site-navbar-brand-image {
   height: 50px;
@@ -132,7 +137,7 @@ body.scrolled .site-navbar .blur {
   font-size: 16px;
   text-transform: uppercase;
   padding: 0 15px;
-  font-weighT: 500;
+  font-weight: 500;
 }
 
 .site-navbar ul.site-navigation a:hover {
@@ -164,25 +169,32 @@ body.scrolled .site-navbar .blur {
   font-size: 1.8rem;
   transition: text-shadow 0.1s ease-in-out;
 }
+
 .site-social:hover {
-  text-shadow: 0 0 20px rgba(255, 255, 255, .8);
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
 }
+
 body.scrolled .site-social:hover {
-  text-shadow: 0 0 20px rgba(0, 0, 0, .8) !important;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.8) !important;
 }
+
 .site-social.twitter {
   color: #00aced;
 }
+
 .site-social.linkedin {
   color: #0077b5;
 }
+
 .site-social.meetup {
   color: #e51937;
 }
+
 .site-social.github {
   color: #222;
   transform: color 0.2s ease-in-out;
 }
+
 body.scrolled .site-social.github {
   color: #000;
 }
@@ -190,21 +202,24 @@ body.scrolled .site-social.github {
 #site-countdown {
   position: relative;
   margin-top: -20px;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   overflow: hidden;
   display: flex;
   height: 100px;
   justify-content: center;
   align-content: center;
 }
+
 #site-countdown.hidden {
   height: 0;
 }
+
 #site-countdown div {
   text-align: center;
   margin: 5px 15px;
   font-size: 50px;
 }
+
 #site-countdown div.label {
   font-size: 15px;
   text-transform: uppercase;
@@ -213,6 +228,7 @@ body.scrolled .site-social.github {
 .site-intro {
   margin: 40px 40px 60px;
 }
+
 .site-section {
   margin: 60px 40px 0;
 }
@@ -228,7 +244,7 @@ h2.site-text-title {
   display: inline-block;
   width: auto;
   margin: 10px auto;
-  background: linear-gradient(to bottom right, #ED586E 0%, #3892D7 100%);
+  background: linear-gradient(to bottom right, #ed586e 0%, #3892d7 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -237,6 +253,7 @@ h2.site-text-title {
 .schedule em {
   color: #777;
 }
+
 .schedule h3 {
   text-transform: uppercase;
   font-size: 24px;
@@ -268,7 +285,7 @@ h2.site-text-title {
   flex-direction: column;
   justify-content: center;
   margin: 0 15px;
-  flex: 1
+  flex: 1;
 }
 
 .site-text-elements .element .icon {
@@ -292,16 +309,19 @@ h2.site-text-title {
   flex-wrap: wrap;
   margin-bottom: -20px;
 }
+
 .site-text-elements.speakers .element {
   margin: 0 15px 30px;
   flex: 0 0 300px;
 }
+
 .site-text-elements.speakers .element a {
   width: 300px;
   height: 300px;
   position: relative;
-  text-shadow: 0 0 6px rgba(0, 0, 0, .5);
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
 }
+
 .site-text-elements.speakers .element a .speaker-image {
   position: absolute;
   height: 100%;
@@ -310,9 +330,10 @@ h2.site-text-title {
   left: 0;
   background-position: center center;
   background-size: cover;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   filter: saturate(0.5);
 }
+
 .site-text-elements.speakers .element a .name {
   display: block;
   position: absolute;
@@ -322,6 +343,7 @@ h2.site-text-title {
   font-size: 24px;
   font-weight: bold;
 }
+
 .site-text-elements.speakers .element a .description {
   display: block;
   position: absolute;
@@ -330,15 +352,18 @@ h2.site-text-title {
   left: 15px;
   color: white;
 }
+
 .site-text-elements.organizers {
   justify-content: center;
   align-content: center;
   flex-direction: row;
   flex-wrap: wrap;
 }
+
 .site-text-elements.organizers .element {
   flex: 0 0 150px;
 }
+
 .site-text-elements.organizers .element img {
   width: 100px;
 }
@@ -350,8 +375,8 @@ h2.site-text-title {
   padding: 20px 40px;
   border-radius: 60px;
   background-color: white;
-  background: linear-gradient(to bottom right, #ED586E 0%, #3892D7 100%);
-  transition: all .3s ease-in-out;
+  background: linear-gradient(to bottom right, #ed586e 0%, #3892d7 100%);
+  transition: all 0.3s ease-in-out;
   color: white;
   filter: saturate(0.6);
 }
@@ -360,7 +385,8 @@ h2.site-text-title {
   background: linear-gradient(to bottom right, #eee 0%, #999 100%) !important;
 }
 
-.button:hover, .button:focus {
+.button:hover,
+.button:focus {
   color: white;
   filter: saturate(1);
 }
@@ -370,4 +396,155 @@ h2.site-text-title {
   text-align: center;
   line-height: 30px;
   background-color: #f1f1f1;
+}
+
+#mobile-menu-toggler {
+  display: none;
+}
+
+#mobile-menu {
+  display: none;
+}
+
+@media (max-width: 860px) {
+  .site-hero-banner .site-hero-banner-logo {
+    width: 200px;
+  }
+  .site-hero-banner .site-hero-banner-text {
+    margin-left: 15px;
+    padding-left: 20px;
+  }
+  .site-hero-banner .site-hero-banner-text h1.title {
+    font-size: 60px;
+    margin-top: -10px;
+  }
+
+  .site-hero-banner .site-hero-banner-text div {
+    line-height: 26px;
+    font-size: 14px;
+  }
+  .site-hero-banner .site-hero-banner-text div i {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 650px) {
+  .site-hero-banner {
+    flex-direction: column;
+  }
+  .site-hero-banner .site-hero-banner-text {
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 30px;
+  }
+  .site-hero-banner .site-hero-banner-text::before {
+    display: none;
+  }
+  #site-hero-bottom-spacer,
+  #site-footer-spacer {
+    height: 80px;
+    margin-bottom: -1px;
+  }
+  #site-countdown {
+    margin-top: 5px;
+  }
+  #site-countdown div {
+    text-align: center;
+    margin: 5px 8px;
+    font-size: 40px;
+  }
+
+  #site-countdown div.label {
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  .site-text-elements {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .footer .content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .site-navbar ul.site-navigation {
+    display: none;
+  }
+
+  #mobile-menu-toggler {
+    display: inline-block;
+  }
+
+  #site-wrapper {
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    left: 0;
+  }
+  .site-navbar {
+    transition: all 0.5s ease-in-out;
+  }
+
+  body.show-mobile-menu #site-wrapper,
+  body.show-mobile-menu .site-navbar {
+    left: -250px;
+  }
+
+  #mobile-menu {
+    position: fixed;
+    right: -250px;
+    top: 0;
+    width: 220px;
+    background-color: #ddd;
+    height: 100vh;
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+    z-index: 10000;
+  }
+
+  #mobile-menu ul.mobile-navigation {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  #mobile-menu ul.mobile-navigation li {
+    margin: 0;
+    padding: 0;
+  }
+
+  #mobile-menu ul.mobile-navigation li a {
+    text-align: center;
+    display: block;
+    padding: 15px 0;
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #e51937;
+  }
+
+  body.show-mobile-menu #mobile-menu {
+    right: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  #site-countdown {
+    margin-top: 14px;
+  }
+  #site-countdown div {
+    text-align: center;
+    margin: 5px 5px;
+    font-size: 25px;
+  }
+
+  #site-countdown div.label {
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+  .site-text-elements {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 }
