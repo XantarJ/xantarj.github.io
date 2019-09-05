@@ -1,828 +1,421 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- ========== Meta Tags ========== -->
-    <meta charset="UTF-8">
-    <meta name="description" content="XantarJ, the Galician Java conference">
-    <meta name="keywords" content="XantarJ, Galicia, Java, Conference>
-    <meta name="author" content="ColorLib">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <!-- ========== Title ========== -->
-    <title> XantarJ </title>
-    <!-- ========== Favicon Ico ========== -->
-    <!--<link rel="icon" href="fav.ico">-->
-    <!-- ========== STYLESHEETS ========== -->
-    <!-- Bootstrap CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Fonts Icon CSS -->
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/css/et-line.css" rel="stylesheet">
-    <link href="assets/css/ionicons.min.css" rel="stylesheet">
-    <!-- Carousel CSS -->
-    <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
-    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet">
-    <!-- Animate CSS -->
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <!-- Custom styles for this template -->
-    <link href="assets/css/main.css" rel="stylesheet">
-</head>
-<body>
-<div class="loader">
-    <div class="loader-outter"></div>
-    <div class="loader-inner"></div>
-</div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>XantarJ</title>
+        <link rel="shortcut icon" href="favicon.ico" />
 
-<!--header start here -->
-<header class="header navbar fixed-top navbar-expand-md">
-    <div class="container">
-        <a class="navbar-brand logo" href="#">
-            <img src="assets/img/logo.png" alt="Evento"/>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headernav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="lnr lnr-text-align-right"></span>
-        </button>
-        <div class="collapse navbar-collapse flex-sm-row-reverse" id="headernav">
-            <ul class=" nav navbar-nav menu">
-<!--                <li class="nav-item">
-                    <a class="nav-link active" href="#">Home</a>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+        <link rel="stylesheet" href="/css/site.css" />
+
+        <!-- Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-94025635-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "UA-94025635-1");
+        </script>
+    </head>
+    <body id="site">
+        <div id="mobile-menu">
+            <ul class="mobile-navigation">
+                <li>
+                    <a href="#event" class="scrolling-link">Event</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#">Speakers</a>
+                <li>
+                    <a href="#schedule" class="scrolling-link">Schedule</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#">Events</a>
+                <li>
+                    <a href="#speakers" class="scrolling-link">Speakers</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#">News</a>
+                <li>
+                    <a href="#tickets" class="scrolling-link">Tickets</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#">Contact</a>
+                <li>
+                    <a href="#sponsors" class="scrolling-link">Sponsors</a>
                 </li>
-                <li class="search_btn">
-                    <a  href="#">
-                       <i class="ion-ios-search"></iu
-                    </a>
-                </li>-->
+                <li>
+                    <a href="#organizers" class="scrolling-link">Organizers</a>
+                </li>
             </ul>
         </div>
-    </div>
-</header>
-<!--header end here-->
+        <div id="site-wrapper">
+            <section class="site-hero">
+                <nav class="site-navbar" aria-label="main navigation">
+                    <div class="blur"></div>
+                    <a href="#site" class="scrolling-link">
+                        <img src="/img/xantarj-logo.png" class="site-navbar-brand-image" alt="XantarJ" />
+                    </a>
+                    <ul class="site-navigation">
+                        <li>
+                            <a href="#event" class="scrolling-link">Event</a>
+                        </li>
+                        <li>
+                            <a href="#schedule" class="scrolling-link">Schedule</a>
+                        </li>
+                        <li>
+                            <a href="#speakers" class="scrolling-link">Speakers</a>
+                        </li>
+                        <li>
+                            <a href="#tickets" class="scrolling-link">Tickets</a>
+                        </li>
+                        <li>
+                            <a href="#sponsors" class="scrolling-link">Sponsors</a>
+                        </li>
+                        <li>
+                            <a href="#organizers" class="scrolling-link">Organizers</a>
+                        </li>
+                    </ul>
+                    <div class="site-social-menu">
+                        <a href="https://twitter.com/XantarJ" target="_blank" class="site-social twitter">
+                            <i class="fab fa-fw fa-twitter"></i>
+                        </a>
+                        <a
+                            href="https://github.com/XantarJ/xantarj.github.io"
+                            target="_blank"
+                            class="site-social github"
+                        >
+                            <i class="fab fa-fw fa-github"></i>
+                        </a>
 
-<!--cover section slider -->
-<section id="home" class="home-cover">
-    <div class="cover_slider owl-carousel owl-theme">
-        <div class="cover_item" style="background: url('assets/img/bg/slider.png');">
-             <div class="slider_content">
-                <div class="slider-content-inner">
-                    <div class="container">
-                        <div class="slider-content-center">
-                            <h2 class="cover-title">
-                                Prepare yourself for the
-                            </h2>
-                            <strong class="cover-xl-text">XantarJ</strong>
-                            <p class="cover-date">
-                                29 September 2018  - Santiago de Compostela
-                            </p>
-                            <a href="https://www.eventbrite.com/e/entradas-xantarj-2018-49884037499" class=" btn btn-primary btn-rounded" >
-                                Buy Tickets Now
-                            </a>
+                        <a class="site-social" href="#" id="mobile-menu-toggler">
+                            <i class="fas fa-fw fa-bars"></i>
+                        </a>
+                    </div>
+                </nav>
+                <div class="site-hero-banner">
+                    <img src="/img/xantarj-logo.png" class="site-hero-banner-logo" alt="XantarJ" />
+                    <div class="site-hero-banner-text">
+                        <h1 class="title">XantarJ</h1>
+                        <div class="date">
+                            <i class="fa fa-calendar fa-lg fa-fw"></i>
+                            29th November - 1st December
+                        </div>
+                        <div class="location">
+                            <i class="fa fa-map-marker fa-lg fa-fw"></i>
+                            Santiago de Compostela (Spain)
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-<!--        <div class="cover_item" style="background: url('assets/img/bg/slider.png');">
-            <div class="slider_content">
-                <div class="slider-content-inner">
-                    <div class="container">
-                        <div class="slider-content-left">
-                            <h2 class="cover-title">
-                                Prepare yourself for the
-                            </h2>
-                            <strong class="cover-xl-text">conference</strong>
-                            <p class="cover-date">
-                                29 September 2018  - Santiago de Compostela
-                            </p>
-                            <a href="#" class=" btn btn-primary btn-rounded" >
-                                Buy Tickets Now
-                            </a>
+                <canvas id="site-hero-bottom-spacer" width="500" height="150"></canvas>
+            </section>
+            <section class="site-countdown hidden" id="site-countdown">
+                <div class="element">
+                    <div class="label">Days</div>
+                    <div id="days"></div>
+                </div>
+                <div class="element">
+                    <div class="label">Hours</div>
+                    <div id="hours"></div>
+                </div>
+                <div class="element">
+                    <div class="label">Minutes</div>
+                    <div id="minutes"></div>
+                </div>
+                <div class="element">
+                    <div class="label">Seconds</div>
+                    <div id="seconds"></div>
+                </div>
+            </section>
+            <section class="site-intro" id="event">
+                <h2 class="site-text-title">
+                    The event
+                </h2>
+                <div class="site-text-body">
+                    XantarJ is the first Java conference in Galicia. Something different, more focused in good
+                    networking with other engineers, share experiences, show to rest of the world the amazing things we
+                    are doing here... and, of course, have fun!
+                </div>
+                <div class="site-text-elements">
+                    <div class="element">
+                        <div class="icon">
+                            <img src="/img/calendar.png" alt="From 29th november to 1st december" />
+                        </div>
+                        <div class="text">
+                            From 29th November
+                            <br />
+                            to 1st December
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="cover_item" style="background: url('assets/img/bg/slider.png');">
-            <div class="slider_content">
-                <div class="slider-content-inner">
-                    <div class="container">
-                        <div class="slider-content-center">
-                            <h2 class="cover-title">
-                                Prepare yourself for the
-                            </h2>
-                            <strong class="cover-xl-text">conference</strong>
-                            <p class="cover-date">
-                                29 September 2018  - Santiago de Compostela
-                            </p>
-                            <a href="#" class=" btn btn-primary btn-rounded" >
-                                Buy Tickets Now
-                            </a>
+                    <div class="element">
+                        <div class="icon">
+                            <img src="/img/map.png" alt="Santiago de Compostela (Spain)" />
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>-->
-    </div>
-    <div class="cover_nav">
-        <ul class="cover_dots">
-            <li class="active" data="0"><span>1</span></li>
-            <li  data="1"><span>2</span></li>
-            <li  data="2"><span>3</span></li>
-        </ul>
-    </div>
-</section>
-<!--cover section slider end -->
-
-<!--event info -->
-<section class="pt100 pb100">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-6 col-md-3  ">
-                <div class="icon_box_two">
-                    <i class="ion-ios-calendar-outline"></i>
-                    <div class="content">
-                        <h5 class="box_title">
-                            DATE
-                        </h5>
-                        <p>
-                            29 september 2018
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-6 col-md-3  ">
-                <div class="icon_box_two">
-                    <i class="ion-ios-location-outline"></i>
-                    <div class="content">
-                        <h5 class="box_title">
-                            location
-                        </h5>
-                        <p>
+                        <div class="text">
                             Santiago de Compostela
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-6 col-md-3  ">
-                <div class="icon_box_two">
-                    <i class="ion-ios-person-outline"></i>
-                    <div class="content">
-                        <h5 class="box_title">
-                            attendees
-                        </h5>
-                        <p>
-                            100+
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-6 col-md-3  ">
-                <div class="icon_box_two">
-                    <i class="ion-ios-pricetag-outline"></i>
-                    <div class="content">
-                        <h5 class="box_title">
-                            tickets
-                        </h5>
-                        <p>
-                            Free
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--event info end -->
-
-
-<!--event countdown -->
-<section class="bg-img pt70 pb70" style="background-image: url('assets/img/bg/bg-img.png');">
-    <div class="overlay_dark"></div>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-10">
-                <h4 class="mb30 text-center color-light">Counter until the big event</h4>
-                <div class="countdown"></div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--event count down end-->
-
-
-<!--about the event -->
-<!--<section class="pt100 pb100">
-    <div class="container">
-        <div class="section_title">
-            <h3 class="title">
-                About the event
-            </h3>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-6">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing eli. Integer iaculis in lacus a sollicitudin. Ut hendrerit hendrerit nisl a accumsan. Pellentesque convallis consectetur tortor id placerat. Curabitur a pulvinar nunc. Maecenas laoreet finibus lectus, at volutpat ligula euismod.
-                </p>
-            </div>
-            <div class="col-12 col-md-6">
-                <p>
-                    In rhoncus massa nec  sollicitudin. Ut hendrerit hendrerit nisl a accumsan. Pellentesque convallis consectetur tortor id placerat. Curabitur a pulvinar nunc. Maecenas laoreet finibus lectus, at volutpat ligula euismod quis. Maecenas ornare, ex in malesuada tempus.
-                </p>
-            </div>
-        </div>
-
-        &lt;!&ndash;event features&ndash;&gt;
-        <div class="row justify-content-center mt30">
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="icon_box_one">
-                    <i class="lnr lnr-mic"></i>
-                    <div class="content">
-                        <h4>9 Speakers</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus massa nec graviante.
-                        </p>
-                        <a href="#">read more</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="icon_box_one">
-                    <i class="lnr lnr-rocket"></i>
-                    <div class="content">
-                        <h4>8 hrs Marathon</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus massa nec graviante.
-                        </p>
-                        <a href="#">read more</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="icon_box_one">
-                    <i class="lnr lnr-bullhorn"></i>
-                    <div class="content">
-                        <h4>Live Broadcast</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus massa nec graviante.
-                        </p>
-                        <a href="#">read more</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="icon_box_one">
-                    <i class="lnr lnr-clock"></i>
-                    <div class="content">
-                        <h4>Early Bird</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus massa nec graviante.
-                        </p>
-                        <a href="#">read more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        &lt;!&ndash;event features end&ndash;&gt;
-    </div>
-</section>-->
-<!--about the event end -->
-
-
-<!--speaker section-->
-<section class="pb100">
-    <div class="container">
-        <div class="section_title mb50">
-            <h3 class="title">
-               our speakers
-            </h3>
-        </div>
-    </div>
-    <div class="row justify-content-center no-gutters">
-        <div class="col-md-3 col-sm-6">
-            <div class="speaker_box">
-                <div class="speaker_img">
-                    <img src="assets/img/speakers/csanchez.png" alt="Carlos Sánchez">
-                    <div class="info_box">
-                        <h5 class="name">Carlos Sánchez</h5>
-                        <p class="position">Software Engineer (Cloudbees)</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="speaker_box">
-                <div class="speaker_img">
-                    <img src="assets/img/speakers/ihasan.png" alt="Ismael Hasan">
-                    <div class="info_box">
-                        <h5 class="name">Ismael Hasan</h5>
-                        <p class="position">Support Engineer (Elastic)</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="speaker_box">
-                <div class="speaker_img">
-                    <img src="assets/img/speakers/jcorral.png" alt="Jose Corral">
-                    <div class="info_box">
-                        <h5 class="name">Jose Corral</h5>
-                        <p class="position">Kubernetes Consultant</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="speaker_box">
-                <div class="speaker_img">
-                    <img src="assets/img/speakers/rcortez.png" alt="Roberto Cortez">
-                    <div class="info_box">
-                        <h5 class="name">Roberto Cortez</h5>
-                        <p class="position">Software Engineer (Tomitribe)</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--speaker section end -->
-
-<!--Price section-->
-<section class="pb100">
-    <div class="container">
-        <div class="section_title mb50">
-            <h3 class="title">
-                Pricing table
-            </h3>
-        </div>
-
-        <div class="row justify-content-center">
-            <div class="col-md-4 col-12">
-                <div class="price_box active">
-                   <div class="price_header">
-                       <h4>
-                           Talks
-                       </h4>
-                       <h6>
-                           For developers
-                       </h6>
-                   </div>
-                    <div class="price_tag">
-                       Free
-                    </div>
-                    <div class="price_features">
-                        <ul>
-                            <li>
-                                Great speakers
-                            </li>
-                            <li>
-                                3 awesome talks
-                            </li>
-                            <li>
-                                Morning
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="price_footer">
-                        <a href="https://www.eventbrite.com/e/entradas-xantarj-2018-49884037499" class="btn btn-primary btn-rounded">Purchase</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-12">
-                <div class="price_box">
-                    <div class="price_header">
-                        <h4>
-                            Workshop
-                        </h4>
-                        <h6>
-                            For developers
-                        </h6>
-                    </div>
-                    <div class="price_tag">
-                        Free
-                    </div>
-                    <div class="price_features">
-                        <ul>
-                            <li>
-                                Practical content
-                            </li>
-                            <li>
-                                Streaming for JUGs in Spain and LATAM
-                            </li>
-                            <li>
-                                Afternoon
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="price_footer">
-                        <a href="https://www.eventbrite.com/e/entradas-xantarj-2018-49884037499" class="btn btn-primary btn-rounded">Purchase</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-12">
-                <div class="price_box">
-                    <div class="price_highlight">
-                        recommended
-                    </div>
-                    <div class="price_header">
-                        <h4>
-                            Foliada
-                        </h4>
-                        <h6>
-                            For everybody!
-                        </h6>
-                    </div>
-                    <div class="price_tag">
-                        Free?
-                    </div>
-                    <div class="price_features">
-                        <ul>
-                            <li>
-                                Family Friendly!
-                            </li>
-                            <li>
-                                Great networking
-                            </li>
-                            <li>
-                               Music and fun
-                            </li>
-                            <li>
-                                Bring your own instruments!
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="price_footer">
-                        <a href="https://www.eventbrite.com/e/entradas-xantarj-2018-49884037499" class="btn btn-primary btn-rounded">Purchase</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--price section end -->
-
-<!--event calender-->
-<!--<section class="pb100">
-    <div class="container">
-        <div class="table-responsive">
-            <table class="event_calender table">
-                <thead class="event_title">
-                <tr>
-                    <th>
-                        <i class="ion-ios-calendar-outline"></i>
-                        <span>next events calendar</span>
-                    </th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>
-                        <img src="assets/img/cleander/c1.png" alt="event">
-                    </td>
-                    <td class="event_date">
-                        14
-                        <span>February</span>
-                    </td>
-                    <td>
-                        <div class="event_place">
-                            <h5>Conference in Amsterdam</h5>
-                            <h6>08 AM - 04 PM</h6>
-                            <p>Speaker: Daniel Hill</p>
-                        </div>
-                    </td>
-                    <td>
-                        <a href="https://www.eventbrite.com/e/entradas-xantarj-2018-49884037499" class="btn btn-primary btn-rounded">Read More</a>
-                    </td>
-                    <td class="buy_link">
-                        <a href="https://www.eventbrite.com/e/entradas-xantarj-2018-49884037499">buy now</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="assets/img/cleander/c2.png" alt="event">
-                    </td>
-                    <td class="event_date">
-                        18
-                        <span>February</span>
-                    </td>
-                    <td>
-                        <div class="event_place">
-                            <h5>Conference in Amsterdam</h5>
-                            <h6>08 AM - 04 PM</h6>
-                            <p>Speaker: Daniel Hill</p>
-                        </div>
-                    </td>
-                    <td>
-                        <a href="https://www.eventbrite.com/e/entradas-xantarj-2018-49884037499" class="btn btn-primary btn-rounded">Read More</a>
-                    </td>
-                    <td class="buy_link">
-                        <a href="https://www.eventbrite.com/e/entradas-xantarj-2018-49884037499">buy now</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="assets/img/cleander/c3.png" alt="event">
-                    </td>
-                    <td class="event_date">
-                        22
-                        <span>February</span>
-                    </td>
-                    <td>
-                        <div class="event_place">
-                            <h5>Conference in Amsterdam</h5>
-                            <h6>08 AM - 04 PM</h6>
-                            <p>Speaker: Daniel Hill</p>
-                        </div>
-                    </td>
-                    <td>
-                        <a href="https://www.eventbrite.com/e/entradas-xantarj-2018-49884037499" class="btn btn-primary btn-rounded">Read More</a>
-                    </td>
-                    <td class="buy_link">
-                        <a href="https://www.eventbrite.com/e/entradas-xantarj-2018-49884037499">buy now</a>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-</section>-->
-<!--event calender end -->
-
-<!--gold sponsors section -->
-<section class="bg-gray pt100 pb100">
-    <div class="container">
-        <div class="section_title mb50">
-            <h3 class="title">
-                our Gold sponsors
-            </h3>
-        </div>
-        <div class="brand_carousel_gold_sponsors  owl-carousel">
-            <div class="brand_item_gold text-center">
-                <a href="https://www.indracompany.com"><img src="assets/img/brands/indra.png" alt="brand"></a>
-            </div>
-        </div>
-    </div>
-</section>
-<!--brands section end-->
-
-<!--brands section -->
-<section class="bg-gray pt100 pb100">
-    <div class="container">
-        <div class="section_title mb50">
-            <h3 class="title">
-                our Silver sponsors
-            </h3>
-        </div>
-        <div class="brand_carousel_silver_sponsors  owl-carousel">
-            <div class="brand_item text-center">
-                <a href="https://coru.net/"><img src="assets/img/brands/corunet.png" alt="brand"></a>
-            </div>
-            <div class="brand_item text-center">
-                <a href="https://www.gradiant.org/"><img src="assets/img/brands/gradiant.png" alt="brand"></a>
-            </div>
-            <div class="brand_item text-center">
-                <a href="https://kiom.com.es/index.php/gallery"><img src="assets/img/brands/kiom.png" alt="brand"></a>
-            </div>
-            <div class="brand_item text-center">
-                <a href="http://optaresolutions.com/"><img src="assets/img/brands/optare.png" alt="brand"></a>
-            </div>
-        </div>
-    </div>
-</section>
-<!--brands section end-->
-
-<!--brands section -->
-<!--<section class="bg-gray pt100 pb100">
-    <div class="container">
-        <div class="section_title mb50">
-            <h3 class="title">
-                our Bronze sponsors
-            </h3>
-        </div>
-        <div class="brand_carousel_bronze_sponsors  owl-carousel">
-        </div>
-    </div>
-</section>-->
-<!--brands section end-->
-
-<!-- organizers section -->
-<section class="bg-gray pt100 pb100">
-    <div class="container">
-        <div class="section_title mb50">
-            <h3 class="title">
-                organizers
-            </h3>
-        </div>
-        <div class="brand_carousel owl-carousel">
-            <div class="brand_item text-center">
-                <a href="http://www.corunajug.org">
-                <img src="assets/img/organizers/coruñajug.png" alt="CorunaJUG">
-                 </a>
-            </div>
-            <div class="brand_item text-center">
-                <a href="https://xantardev.org/">
-                <img src="assets/img/organizers/xantardev.png" alt="XantarDev">
-                </a>
-            </div>
-            <div class="brand_item text-center">
-                <a href="http://www.vigojug.org">
-                <img src="assets/img/organizers/vigojug.png" alt="VigoJUG">
-                </a>
-            </div>
-
-        </div>
-    </div>
-</section>
-<!--brands section end-->
-
-<!--get tickets section -->
-<!--<section class="bg-img pt100 pb100" style="background-image: url('assets/img/bg/tickets.png');">
-    <div class="container">
-        <div class="section_title mb30">
-            <h3 class="title color-light">
-                GEt your tickets
-            </h3>
-        </div>
-        <div class="row justify-content-center align-items-center">
-            <div class="col-md-9 text-md-left text-center color-light">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus massa nec gravida tempus. Integer iaculis in aazzzCurabitur a pulvinar nunc. Maecenas laoreet finibus lectus, at volutpat ligula euismod.
-            </div>
-            <div class="col-md-3 text-md-right text-center">
-                <a href="https://www.eventbrite.com/e/entradas-xantarj-2018-49884037499" class="btn btn-primary btn-rounded mt30">buy now</a>
-            </div>
-        </div>
-    </div>
-</section>-->
-<!--get tickets section end-->
-
-<!--footer start -->
-<footer>
-    <div class="container">
-        <div class="row justify-content-center">
-
-            <div class="col-md-4 col-12">
-                <div class="footer_box">
-                    <div class="footer_header">
-                        <div class="footer_logo">
-                            <img src="assets/img/logo.png" alt="evento">
+                            <br />
+                            Galicia, Spain
                         </div>
                     </div>
-                    <div class="footer_box_body">
-                        <p>
-                            XantarJ is the first Java conference in Galicia. Something different, more focused in good networking with other engineers, share experiences, show to rest of the world the amazing things we are doing here... and, of course, have fun!
-                        </p>
-                        <ul class="footer_social">
-                            <li>
-                                <a href="https://twitter.com/xantarj"><i class="ion-social-twitter"></i></a>
-                            </li>
-<!--                            <li>
-                                <a href="#"><i class="ion-social-pinterest"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="ion-social-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="ion-social-dribbble"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="ion-social-instagram"></i></a>
-                            </li>-->
-                        </ul>
+                    <div class="element">
+                        <div class="icon">
+                            <img src="/img/tickets.png" alt="It's free!" />
+                        </div>
+                        <div class="text">
+                            Free tickets!
+                        </div>
                     </div>
-                </div>
-            </div>
-
-<!--            <div class="col-12 col-md-4">
-                <div class="footer_box">
-                    <div class="footer_header">
-                        <h4 class="footer_title">
-                            instagram
-                        </h4>
-                    </div>
-                    <div class="footer_box_body">
-                        <ul class="instagram_list">
-                            <li>
-                                <a href="#">
-                                    <img src="assets/img/cleander/c1.png" alt="instagram">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="assets/img/cleander/c2.png" alt="instagram">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="assets/img/cleander/c3.png" alt="instagram">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="assets/img/cleander/c3.png" alt="instagram">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="assets/img/cleander/c2.png" alt="instagram">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="assets/img/cleander/c1.png" alt="instagram">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>-->
-
-<!--            <div class="col-12 col-md-4">
-                <div class="footer_box">
-                    <div class="footer_header">
-                        <h4 class="footer_title">
-                            subscribe to our newsletter
-                        </h4>
-                    </div>
-                    <div class="footer_box_body">
-                        <div class="newsletter_form">
-                            <input type="email" class="form-control" placeholder="E-Mail here">
-                            <button class="btn btn-rounded btn-block btn-primary">SUBSCRIBE</button>
+                    <div class="element">
+                        <div class="icon">
+                            <img src="/img/people.png" alt="More than 100 atendees" />
+                        </div>
+                        <div class="text">
+                            More than
+                            <br />
+                            150 atendees
                         </div>
                     </div>
                 </div>
-            </div>-->
-        </div>
-    </div>
-</footer>
-<div class="copyright_footer">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-6 col-12">
-                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-            </div>
-            <div class="col-12 col-md-6 ">
-                <ul class="footer_menu">
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-<!--                    <li>
-                        <a href="#">Speakers</a>
-                    </li>
-                    <li>
-                        <a href="#">Events</a>
-                    </li>
-                    <li>
-                        <a href="#">News</a>
-                    </li>-->
-                    <li>
-                        <a href="mailto:xantarj@xantarj.org">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-<!--footer end -->
+            </section>
+            <section class="site-section" id="schedule">
+                <h2 class="site-text-title">
+                    Schedule
+                </h2>
+                <div class="site-text-body schedule">
+                    We're still working on this, but here is a brief of the idea.
 
-<!-- jquery -->
-<script src="assets/js/jquery.min.js"></script>
-<!-- bootstrap -->
-<script src="assets/js/popper.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/waypoints.min.js"></script>
-<!--slick carousel -->
-<script src="assets/js/owl.carousel.min.js"></script>
-<!--parallax -->
-<script src="assets/js/parallax.min.js"></script>
-<!--Counter up -->
-<script src="assets/js/jquery.counterup.min.js"></script>
-<!--Counter down -->
-<script src="assets/js/jquery.countdown.min.js"></script>
-<!-- WOW JS -->
-<script src="assets/js/wow.min.js"></script>
-<!-- Custom js -->
-<script src="assets/js/main.js"></script>
-</body>
+                    <h3>Friday 29th November</h3>
+                    <em>Afternoon</em>
+                    - Open Space about Java and Communities.
+
+                    <h3>Saturday 30th November</h3>
+                    <em>Full day</em>
+                    - Talks of about 45 minutes each
+
+                    <h3>Sunday 1st December</h3>
+                    <em>Free</em>
+                    - Team building
+                </div>
+            </section>
+            <section class="site-section" id="speakers">
+                <h2 class="site-text-title">
+                    Speakers
+                </h2>
+                <div class="site-text-elements speakers">
+                    <div class="element">
+                        <a target="_blank" href="https://www.twitter.com/auritamh">
+                            <span
+                                class="speaker-image"
+                                style="background-image: url('/img/speakers/auritamh.jpg')"
+                            ></span>
+                            <span class="name">Andrea Muñoz</span>
+                            <span class="jug">MadridJUG</span>
+                            <span class="role">
+                                Senior Java Software Engineer<br />
+                                at Red Hat EMEA
+                            </span>
+                        </a>
+                    </div>
+                    <div class="element">
+                        <a target="_blank" href="https://www.twitter.com/brunobat_">
+                            <span
+                                class="speaker-image"
+                                style="background-image: url('/img/speakers/brunobat_.jpg')"
+                            ></span>
+                            <span class="name">Bruno Baptista</span>
+                            <span class="jug">CoimbraJUG</span>
+                            <!-- display: block -->
+                            <span class="role">
+                                Tech Lead Engineer<br />
+                                at Talkdesk
+                            </span>
+                        </a>
+                    </div>
+                    <div class="element">
+                        <a target="_blank" href="https://www.twitter.com/dgomezg">
+                            <span
+                                class="speaker-image"
+                                style="background-image: url('/img/speakers/dgomezg.jpg')"
+                            ></span>
+                            <span class="name">David Gómez García</span>
+                            <span class="jug">MadridJUG</span>
+                            <!-- display: block -->
+                            <span class="role">
+                                Developer advocate<br />
+                                at Liferay
+                            </span>
+                        </a>
+                    </div>
+                    <div class="element">
+                        <a target="_blank" href="https://www.twitter.com/ilopmar">
+                            <span
+                                class="speaker-image"
+                                style="background-image: url('/img/speakers/ilopmar.jpg')"
+                            ></span>
+                            <span class="name">Iván López</span>
+                            <span class="jug">MadridGUG</span>
+                            <!-- display: block -->
+                            <span class="role">
+                                Senior Software Engineer<br />
+                                at Object Computing, Inc (OCI)
+                            </span>
+                        </a>
+                    </div>
+                    <div class="element">
+                        <a target="_blank" href="https://www.twitter.com/vilojona">
+                            <span
+                                class="speaker-image"
+                                style="background-image: url('/img/speakers/vilojona.jpg')"
+                            ></span>
+                            <span class="name">Jonathan Vila</span>
+                            <span class="jug">BarcelonaJUG</span>
+                            <!-- display: block -->
+                            <span class="role">
+                                Senior Software Engineer<br />
+                                at Red Hat
+                            </span>
+                        </a>
+                    </div>
+                    <div class="element">
+                        <a target="_blank" href="https://www.twitter.com/deors314">
+                            <span
+                                class="speaker-image"
+                                style="background-image: url('/img/speakers/deors314.jpg')"
+                            ></span>
+                            <span class="name">Jorge Hidalgo</span>
+                            <span class="jug">MalagaJUG</span>
+                            <!-- display: block -->
+                            <span class="role">
+                                DevOps<br />
+                                at accenture
+                            </span>
+                        </a>
+                    </div>
+                    <div class="element">
+                        <a target="_blank" href="https://www.twitter.com/icougil">
+                            <span
+                                class="speaker-image"
+                                style="background-image: url('/img/speakers/icougil.jpg')"
+                            ></span>
+                            <span class="name">Nacho Cougil</span>
+                            <span class="jug">BarcelonaJUG</span>
+                            <!-- display: block -->
+                            <span class="role">
+                                Software craftsman<br />
+                                at Codurance
+                            </span>
+                        </a>
+                    </div>
+                    <div class="element">
+                        <a target="_blank" href="https://www.twitter.com/martinstuga">
+                            <span
+                                class="speaker-image"
+                                style="background-image: url('/img/speakers/martinstuga.jpg')"
+                            ></span>
+                            <span class="name">Paulo Martins</span>
+                            <span class="jug">LisbonJUG</span>
+                            <!-- display: block -->
+                            <span class="role">
+                                Solutions Engineering Manager<br />
+                                at BAO Systems
+                            </span>
+                        </a>
+                    </div>
+                    <div class="element">
+                        <a target="_blank" href="https://www.twitter.com/radcortez">
+                            <span
+                                class="speaker-image"
+                                style="background-image: url('/img/speakers/radcortez.jpg')"
+                            ></span>
+                            <span class="name">Roberto Cortez</span>
+                            <span class="jug">CoimbraJUG</span>
+                            <!-- display: block -->
+                            <span class="role">
+                                Java Champion, Java One Rockstar<br />
+                                JNation Founder & Organizer
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="site-section" id="tickets">
+                <h2 class="site-text-title">
+                    Tickets
+                </h2>
+                <div class="site-text-body">
+                    The event is free but we need to know how many atendees we'll have, so you should get a ticket for
+                    each atendee.
+                    <div>
+                        <a href="#" class="button disabled">
+                            Available soon
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="site-section" id="sponsors">
+                <h2 class="site-text-title">
+                    Sponsors
+                </h2>
+                <div class="site-text-body">
+                    <!--
+                        <h3>Gold sponsors</h3>
+                        <h3>Silver sponsors</h3>
+                        <h3>Bronce sponsors</h3>
+                    -->
+                    <div class="coming-soon">
+                        Coming soon
+                    </div>
+                </div>
+            </section>
+            <section class="site-section" id="organizers">
+                <h2 class="site-text-title">
+                    Organizers
+                </h2>
+                <div class="site-text-elements organizers">
+                    <div class="element">
+                        <a href="http://www.corunajug.org" target="_blank">
+                            <img src="/img/organizers/corunajug.png" alt="CoruñaJUG" />
+                        </a>
+                    </div>
+                    <div class="element">
+                        <a href="https://xantardev.org/" target="_blank">
+                            <img src="/img/organizers/xantardev.png" alt="XantarDev" />
+                        </a>
+                    </div>
+                    <div class="element">
+                        <a href="https://www.vigojug.org" target="_blank">
+                            <img src="/img/organizers/vigojug.png" alt="VigoJUG" />
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer">
+                <canvas id="site-footer-spacer" width="500" height="150"></canvas>
+                <div class="content">
+                    Made with
+                    <i class="love fas fa-heart"></i>
+                    from the XantarJ community.
+                    <br />
+                    Using
+                    <a href="https://fontawesome.com/" target="_blank">
+                        fontawesome
+                    </a>
+                    and other icons made by
+                    <a href="https://www.flaticon.com/authors/freepik" title="Freepik">
+                        Freepik
+                    </a>
+                    from
+                    <a href="https://www.flaticon.com/" title="Flaticon">
+                        www.flaticon.com
+                    </a>
+                    licensed by
+                    <a
+                        href="http://creativecommons.org/licenses/by/3.0/"
+                        title="Creative Commons BY 3.0"
+                        target="_blank"
+                    >
+                        CC 3.0 BY
+                    </a>
+                    with small changes.
+                </div>
+            </footer>
+        </div>
+        <script src="js/site.js"></script>
+        <script src="https://kit.fontawesome.com/c29d9a23e8.js"></script>
+    </body>
 </html>
